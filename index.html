@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>SGS ALL DAY</title>
+	<!-- why are you here what are you doing -->
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Spice God Squad Home Page">
+	<meta name="keywords" content="Spice,God,Squad,fire,beats,volcano,magma,chocolate">
+	<meta name="author" content="Jeremy">
+	
+	<meta name="viewport" content="width=device-width">
+
+	
+	<base href="http://spicegodsquad.com" target="_current">
+	<style>
+		
+		html {height: 100%;
+		box-sizing: border-box;}
+		
+		*,*:before,*:after {box-sizing: inherit;}
+  
+		header, section, footer, aside, nav, main, article, figure {display: block;}
+		
+		header,footer,nav,section,article,aside {border:1px solid grey;background-color:white;}
+		header {background-color:#a2798f;padding:0.5em;}
+		footer {background-color:#ebdada;border:0px;padding:0.5em;}
+		
+		body{background-color:#ebdada;
+		color:#3a2244;
+		position:relative;
+		margin:0;
+		padding:0;
+		min-height:100%;
+		color:
+		padding-bottom:2rem;
+		font-family:"Helvetica Neue", Helvetica, Arial, sans-serif}
+		
+		h1{font-size:120%;}
+		
+		h2{font-size:80%;
+		text-align:center;}
+		
+		p{font-size:100%;line-height:90%;}
+		
+		nav{background-color:#a2798f;
+		max-width:100%;
+		padding:0px;
+		text-align:right;
+		box-shadow:-1rem 1rem;
+		border-radius:0.5rem;}
+		
+		nav ul{border-radius:0;
+		list-style-type: none;
+		display:inline-block;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		line-height:100%;}
+		
+		nav ul li{display:inline;
+		float:left;
+		margin:1rem;}
+		
+		nav ul li a{padding:100% 1rem 12% 0;
+		text-decoration: none;
+		border-radius: 0 0 4px 4px;
+		font-size:120%;}
+		
+		nav ul li a:hover{color:#e8ddcb;background-color: #d7c6cf;}
+		
+		section{background-color:#afb4bb;
+		max-width:80%;
+		margin-left:50%;
+		float:left;
+		padding:1rem;}
+		
+		aside{background-color:#d7c6cf;
+		width:25%;
+		clear:both;
+		position:fixed;
+		right:5%;
+		float:right;
+		padding:1rem;
+		margin-right:20%;}
+		
+		section, aside{border-radius:.2em;}
+		
+		footer{
+		max-width:100%;
+		clear:both;
+		text-align:center;
+		position:absolute;
+		right:0;
+		bottom:0;
+		left:0;
+		clear:both;
+		padding:0.5rem;
+		font-size:0.6rem;}
+		
+		input[type='checkbox'] {
+        width:10px;
+        height:10px;
+		}
+		
+		a{text-decoration:none;
+		font-weight:bold;
+		color:#cdb380;
+		text-transform:uppercase;}
+		
+	</style>
+
+	<script type="text/javascript"> 
+	//This javascript was apparently written by Tab, so give him credit i guess.
+		function cast(i) {
+			var ret = Number(i).toString(16);
+			while (ret.length < 2) ret="0"+ret;
+			return ret;
+		}
+		function exec(r,g,b) {
+			var c = "#" + cast(r) + cast(g) + cast(b);
+			document.body.style.backgroundColor = c;
+		}
+		function lim(i) {
+			return Math.min(Math.max(i,0),255);
+		}
+ 
+		var r = 0xFF;	//initial red
+		var g = 0x00;	//initial green
+		var b = 0x00;	//initial blue
+		var s = 1;		//initial state
+		var t = 0;		//initial substate
+		var u = 0x10;	//stepsize
+		wark();
+ 
+		function partyHard() {
+			setTimeout(partyHard, 10);
+			switch(s) {
+ 
+				// Looks smoother
+				case 1: r-=u; g+=u; break;
+				case 2: g-=u; b+=u; break;
+				case 3: b-=u; r+=u; break;
+ 
+				default: s=1; t=0;
+			}
+			t += u;
+			r = lim(r);
+			g = lim(g);
+			b = lim(b);
+			exec(r, g, b);
+			if(t >= 255) {
+				t = 0;
+				s++;
+			}
+		}
+		
+		function change(){
+			if(on){
+				location.reload(false);
+			}
+		}
+	</script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+
+<!--<body onload="partyHard();" style="text-align: center;" > -->
+<body>
+	<form id="party" style="opacity:0.2;float:left;position:absolute;right:0;bottom:0;z-index:1;padding:.5rem">
+		<input type="checkbox" name="party" value="on" onclick="partyHard();on=true;" onchange="change();"><span style="font-size:0.5em;font-family:Comic Sans MS;opacity=40%;">
+		<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>
+		<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>
+		<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>
+		<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>
+		<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>
+		<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>
+		<strong><strong><strong><strong><strong><strong><strong><strong>Party Hard?</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>
+		</strong></strong></span>
+	</form>
+	<!-- the divs keep me safe
+	<div>
+		<!--<h1 style="font-family:Comic Sans MS;text-align:center;font-size:2rem;padding-top:1rem;"><strong><a href="logo_rough.jpg" target="_blank"><span style="color:#3a2244;">Spice God Squad&trade;</span></a></strong></h1>-->
+	<!--</div>-->
+	
+	<div>
+	<nav>
+		<ul>
+			<li><a href="index.html" style="text-align:left;border-radius:0px;"><img src="logo_rough.jpg" style=";height:2rem;width:4rem;text-align:left;float:left;"></a></li>
+			<li><a href="whatryabuyin.html">Products</a></li>
+			<li><a href="squad.html">The Squad</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>	
+	</nav>
+	</div>
+	
+	<div style="float:center">
+	<div style="border-radius:4px;width:50%;height:80%;position:relative;padding:5px;">
+	<section>
+		<h2>Welcome to our new site!</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	</div>
+	
+	<div>
+	<aside title="cop my mixtape fam">
+		QUALITY
+		<iframe width="100%" height="64px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214469179&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
+		</iframe>
+	</aside>
+	</div>
+	</div>
+	<div>
+	<footer>
+		<!--scfbtwitterigetc-->
+		<a href="https://soundcloud.com/spice-god-squad"><img src="sc_white.png" alt="peep our soundcloud my dude" style="border:0;"></a>
+		<a href="https://www.facebook.com/SpiceGodSquad">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+		xml:space="preserve">
+		<g transform="scale(0.13)">
+		<path id="Blue_1_" fill="#eeeeee" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812
+		c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225
+		H248.082z"/>
+		<path id="f" fill="#FFFFFF" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935
+		l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585
+		v99.803H182.409z"/>
+		</g></svg></a>
+		<br>&copy; Spice God Squad 2015
+	</footer>
+	</div>
+</body>
+</html>
